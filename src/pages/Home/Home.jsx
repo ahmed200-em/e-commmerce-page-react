@@ -4,6 +4,7 @@ import Navbar from "../../layouts/Header.jsx";
 import heroImage from "../../assets/img/hero-2.jpg";
 import ProductCard from "./components/Products.jsx";
 import FeatureCard from "./components/Features.jsx";
+import Footer from "../../layouts/Footer.jsx";
 import "./Home.css";
 
 function Home(props) {
@@ -77,6 +78,14 @@ function Home(props) {
                     </div>
                 </section>
             </main>
+            <Footer
+                brandName="MyBrand"
+                description="Premium consumer electronics and accessories store."
+                email="contact@MyBrand.ma"
+                phone="+212 522 00 11 22"
+                location="Casablanca, Morocco"
+                year={2026}
+            />
         </>
     );
 }
