@@ -1,25 +1,16 @@
-import React from "react";
-import "./Home.css";
+import react from "react";
+import Hero from "./components/Hero.jsx";
 
-function Hero(props) {
+function Home(props) {
     return (
-        <section id="home" className="hero-section">
-            <div className="hero-text">
-                <h1>{props.title}</h1>
-                <p>{props.subtitle}</p>
-                <button className="hero-button" onClick={props.onActionClick}>
-                    {props.buttonText}
-                </button>
-            </div>
-            <div className="hero-image-wrapper">
-                <img
-                    src={props.imageUrl}
-                    alt="Hero Banner"
-                    className="hero-image"
-                />
-            </div>
-        </section>
+        <Hero
+            title={props.title}
+            subtitle={props.subtitle}
+            buttonText={props.buttonText}
+            imageUrl={props.imageUrl}
+            onActionClick={props.onActionClick}
+        />
     );
 }
 
-export default Hero;
+export default Home;
